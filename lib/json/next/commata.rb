@@ -93,6 +93,8 @@ def parse_object
          end
       else
         puts "!! format error: object literal - expected colon (:) - rest is >>#{@buffer.rest}<<"
+        ## return because we will loop if we don't
+        return
       end
     end
  else

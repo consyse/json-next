@@ -6,7 +6,7 @@
 
 
 require 'helper'
-
+require 'byebug'
 
 class TestCommata < MiniTest::Test
 
@@ -19,6 +19,8 @@ class TestCommata < MiniTest::Test
 
     json1 = JSON::Next::Commata.convert( sample1, debug: true )
     puts json1
+
+    debugger
 
     assert_equal eval(exp1), JSON.parse( json1 )
 
