@@ -1,3 +1,5 @@
+require './lib/json/next/version.rb'
+
 Gem::Specification.new do |s|
   s.name        = 'json-next'
   s.version     = JSON::Next::VERSION
